@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio_01</title>
+  </head>
+
+  <body class="font-nunito h-screen">
+    <!-- intro section -->
+    <div
+      class="h-1/2 overflow-hidden md:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative"
+    >
+      <!-- navbar-->
+      <nav
+        class="w-full shadow-md md:shadow-none md:hover:shadow-md bg-white fixed top-0 z-10 dark:bg-slate-900"
+      >
+        <!-- all container -->
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <!-- logo -->
+          <div class="flex items-center gap-2">
+            <span>
+              <img class="w-8" src="./img/logo.png" alt="" />
+            </span>
+            <span class="text-2xl font-bold dark:indigo-900 text-indigo-900">
+              Nikhil Soni
+            </span>
+          </div>
+          <!-- other links navbar -->
+          <ul
+            class="space-x-10 text-gray-600 font-bold text-sm hidden md:flex dark:text-indigo-300"
+          >
+            <li class="hover:text-indigo-500">
+              <a href="#">Homepage</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#about">About Me</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#services">Services</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#works">Works</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#links">Links</a>
+            </li>  <li class="hover:text-indigo-500">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- last nav logo -->
+          <img
+            class="hidden moon md:block w-7 cursor-pointer"
+            src="./img/moon.png"
+            alt=""
+          />
+
+          <!-- hamburger menu -->
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-1 bg-indigo-900"></div>
+            <div class="w-6 h-1 bg-indigo-900"></div>
+            <div class="w-6 h-1 bg-indigo-900"></div>
+          </div>
+
+          <!-- mobile links -->
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-2xl space-y-10 text-white font-bold uppercase text-sm text-center"
+          >
+            <li>
+              <a id="hlinks" href="#">Homepage</a>
+            </li>
+            <li>
+              <a id="hlinks" href="#about">About Me</a>
+            </li>
+            <li>
+              <a id="hlinks" href="#services">Services</a>
+            </li>
+            <li>
+              <a id="hlinks" href="#works">Works</a>
+            </li>
+             <li>
+              <a id="hlinks" href="#links">Links</a>
+            </li>
+            <li>
+              <a id="hlinks" href="#contact">Contact</a>
+            </li>
+            <li>
+              <a id="hlinks" class="moon" href="#">Dark Mode </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="h-5/6 absolute bottom-0 right-0 lg:left-0 mx-auto object-cover sm:h-4/5"
+        src="./img/poster14.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-5 sm:text-4xl md:left-1/4 md:text-5xl lg:left-1 xl:text-6xl font-bold"
+      >
+        <span class="text-gray-600">Coding Addict</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+
+      <!-- other text -->
+      <div
+        class="dark:bg-slate-900 dark:shadow-slate-900 dark:shadow-lg hidden lg:flex flex-col absolute top-0 bottom-0 right-10 m-auto rounded-md shadow-lg bg-white w-1/3 h-fit"
+      >
+        <h1 class="text-4xl m-2 font-bold text-indigo-900">Hi, I'am Nikhil</h1>
+        <p class="text-gray-400  m-2">
+          An individual with indepth knowledge of Data Structure and
+          Algorithms ,A creative web developer with knowledge of frontend and backend tools and technologies.A problem
+          solver Intrested in development and internships releted to
+          development for learning new skills
+        </p>
+        <a
+          class="bg-indigo-600 rounded-md font-semibold text-white text-bold text-xl px-3 py-2 w-fit m-2 hover:bg-indigo-500"
+          href="#contact"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about me-->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div
+        class="container md:flex-row py-40 mx-auto flex flex-col-reverse items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative">
+          <!-- <img
+            class="-z-10 h-1/2 w-1/2 absolute -top-20"
+            src="./img/dots.png"
+            alt=""
+          /> -->
+          <!-- your dp -->
+          <div class="h-full rounded-xl shadow-xl overflow-hidden">
+            <img class="h-80 xl:h-96" src="./img/profile_pic.jpg" alt="" />
+            <h1
+              class="mx-auto text-center mt-9 text-gray-500 font-bold text-3xl"
+            >
+              Nikhil Soni
+            </h1>
+<div class="max-w-xs overflow-auto">
+ <p
+              class="text-gray-400 mx-auto break-all p-3  max-w-xs font-bold pt-6 "
+            >
+              My Skills: C,C++,Javascript,Java,Python,HTML,CSS
+              ,React.js,Node.js,Express.js,MongoDB,Mysql
+              ,Linux,Bootstrap,Tailwind,Firebase,Sass,MUI, 
+            </p>
+</div>
+           
+            <p class="text-gray-400 mx-auto break-words max-w-sm pt-6 p-3">
+              I have excellent command on core subjects like Data Structure and  Algorithms, Object Oriented Programming , Operating  System,Database Management System,Analysis and Design of Algorithms and Software
+              Engineering
+            </p>
+          </div>
+        </div>
+        <!-- right -->
+        <!-- all intro and skills -->
+        <div class="my-auto flex flex-col gap-3">
+          
+          <h1 class="text-indigo-600  font-bold">About Me</h1>
+           <h1 class="text-3xl text-gray-500 font-medium dark:text-indigo-300">
+          3* at CC
+          </h1>
+          
+          <h1 class="text-3xl text-gray-400 font-medium dark:text-indigo-300">
+           920+ Leetcode
+          </h1>
+           <h1 class="text-3xl text-gray-500 font-medium dark:text-indigo-300">
+          6* hackerRank Problem Solver
+          </h1>
+          <hr>
+         
+          <p class="text-gray-400  max-w-4xl">
+            I am a prefinal year student of Shri Ram Institude of Technology Jabalpur,a competative programmer and an excellent problem solver  with quite good practice of Data Structure and Algorithms,problem solving and experianced in  web
+            development,  I have solved more than 1300 DSA related problems   accross diffrent coding platforms
+            code(Leetcode,geeksforgeeks,codechef,hackerRank etc)
+          </p>
+          <h2 class="text-gray-400 font-bold text-2xl">C++</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-2/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">Java</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">C</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-10/12 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-10/12 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/12 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">React.js</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-bold text-2xl">Node/Express</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-2/12 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+
+          <h2 class="text-gray-400 font-bold text-2xl">Python</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services" class="dark:bg-slate-900 ">
+      <div class="container mx-auto  " >
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center ">
+          <h1 class="text-indigo-600 font-bold">Services</h1>
+          <h1 class="text-indigo-600 text-3xl font-bold">What do I offer</h1>
+          <p class="md:w-1/2 text-center text-gray-400">
+            I have worked with so many frontend as well as backend tools to my main services are web development and web designing
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="flex flex-wrap p-5 justify-center align-center">
+          <!-- cards -->
+          <div
+            class="my-3 md:my-10 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-md text-lg dark:text-white">Web Development</h1>
+            <p class="text-gray-400 break-words">
+ I have developed projects using tools and technologies like :HTML,Css,Javascript,Node.js,React.js,Express.js,firebase,Mongodb,MySql etc
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read More...</a
+            >
+          </div>
+          
+        
+          <div
+            class="my-3 md:my-10 w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-md text-lg dark:text-white">Web Designing</h1>
+            <p class="text-gray-400">
+               In my previous projects I have already used new technologies and frameworks like Tailwind-CSS,Material-UI ,SASS,Bootstrap,figma design etc
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href=""
+              >Read More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- works and project -->
+
+    <div id="works" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">Portfolio</h1>
+          <h1 class="text-indigo-600 text-3xl font-bold">Works and Projects</h1>
+          <p class="md:w-1/2 text-center text-gray-400">
+ In my whole  Engineering I have worked on so many innovative and intresting projects some of them are:
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="flex flex-wrap p-5">
+          <!-- cards -->
+         
+          <div class="my-3 md: w-full md:w-1/2 p-5 lg:w-1/4 justify-center">
+           <a href="https://github.com/nikhilsoni909/Social-Media_MERN"> <img src="./img/project1.png" alt="" /></a>
+           <h1 class="text-indigo-600 font-bold text-center justify-center">MERN Social-Media-App</h1>
+          </div>
+          <div class="my-3 md: w-full md:w-1/2 p-5 lg:w-1/4">
+           <a href="
+https://nikhilsoni909.github.io/hoBankDesign/"> <img src="./img/project4.png" alt="" /></a>
+            <h1 class="text-indigo-600 font-bold text-center justify-center">Bank Website react+tailwind (Figma Design)</h1>
+          </div>
+          <div class="my-3 md: w-full md:w-1/2 p-5 lg:w-1/4">
+           <a href="https://fir-lamadev-69948.firebaseapp.com/login"> <img src="./img/project5.png" alt="" /></a>
+           <h1 class="text-indigo-600 font-bold text-center justify-center">Admin Dashboard (React+Firebase)</h1>
+          </div>
+          <div class="my-3 md: w-full md:w-1/2 p-5 lg:w-1/4">
+           <a href="https://chatapp-f7b44.web.app/login"> <img src="./img/project6.png" alt="" /></a>
+           <h1 class="text-indigo-600 font-bold text-center justify-center">RealTime Chat App (React+Firebase)</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Links -->
+<div id="links" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">Important</h1>
+          <h1 class="text-indigo-600 text-3xl font-bold">Links</h1>
+          <p class="md:w-1/2 text-center text-gray-400">
+           Below are some important links to connect with me
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="flex flex-wrap justify-center p-5">
+          <!-- cards -->
+           <div class=" m-8">
+        <a href="https://leetcode.com/nikhil909/">    <img class="md:w-20 w-16  rounded-full" src="./img/leetcode_logo.png  " alt="" /></a>
+          </div>
+          <div class="m-8 ">
+           <a href="https://www.codechef.com/users/nikhil909"><img class="w-20 rounded-full " src="./img/codechef_logo.png" alt="" /></a> 
+          </div>
+          <div class="m-8">
+          <a href="https://www.hackerrank.com/nikhilrajsoni909"> <img  class="w-20   rounded-full" src="./img/hackerrank_logo.png" alt="" /></a> 
+          </div>
+         
+          <div class=" m-8">
+          <a href="https://github.com/nikhilsoni909">  <img class="w-20 rounded-full" src="./img/github_icon.png" alt="" /></a>         </div>
+          <div class=" m-8">
+          <a href="https://www.linkedin.com/in/nikhil-soni-b40708238/">  <img class="w-20 rounded-full" src="./img/linkedin_logo.png" alt="" /></a>         </div>
+          <div class=" m-8">
+          <a href="https://auth.geeksforgeeks.org/user/nikhilrajtnch/practice/">  <img class="w-20 rounded-full" src="./img/gfg_logo.png" alt="" /></a>         </div>
+          <div class=" m-8">
+          <a href="https://www.instagram.com/nikhil_soni_909/">  <img class="w-20 rounded-full" src="./img/instamain.webp" alt="" /></a>         </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- contact -->
+    <!-- top -->
+    <div id="contact" class="dark:bg-slate-900">
+      <div>
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center ">
+          <h1 class="text-indigo-600 font-bold">Contact Me</h1>
+          <div class="text-center">
+             <br>
+            <a
+              class="text-indigo-600 font-bold hover:text-indigo-200 border-2  border-indigo-300 p-2 rounded-lg "  
+              href=mailto:nikhilrajsoni909@gmail.com"
+            >
+              nikhilrajsoni909@gmail.com</a
+            >
+            <br>
+            <br>
+          </div>
+          <h1 class="text-indigo-600 text-3xl font-bold">Have a question?</h1>
+          <p class="md:w-1/2 text-center text-gray-400">
+            Do you have any idea or plan? lets discuss and see what we can do
+            together!
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center" action="">
+          <input
+            class="md:w-1/2 p-2 dark:bg-slate-800 dark:text-white rounded-md w-full ring-2 ring-indigo-300"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input
+            class="md:w-1/2 p-2 dark:bg-slate-800 dark:text-white rounded-md w-full ring-2 ring-indigo-300"
+            type="Email"
+            placeholder="Email"
+          />
+          <textarea
+            class="md:w-1/2 p-2 dark:bg-slate-800 dark:text-white w-full ring-1 rounded-md ring-indigo-300"
+            name=""
+            id=""
+            placeholder="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button
+            class="w-1/2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-500 px-3 py-2 cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <!-- all container -->
+      <div class="container mx-auto py-5 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <span>
+            <img class="w-8" src="./img/logo.png" alt="" />
+          </span>
+          <span class="text-2xl font-bold text-white"> Nikhil Soni </span>
+        </div>
+        <span class="hidden md:block text-white">
+          &copy; 2022 Nikhil Soni. Designed By Nikhil
+        </span>
+        <!-- <span class="md:hidden text-white"> &copy; 2022 Nikhil Soni </span> -->
+        <div class="flex gap-3">
+          <a href="https:/www.facebook.com/">
+            <img class="w-4 cursor-pointer" src="./img/facebook.png" alt=""
+          /></a>
+          <a href="https:/www.twitter.com/">
+            <img class="w-4 cursor-pointer" src="./img/twitter.png" alt=""
+          /></a>
+          <a href="https:/www.instagram.com/">
+            <img class="w-4 cursor-pointer" src="./img/instagram.png" alt=""
+          /></a>
+          <a href="https:/www.linkedin.com/">
+            <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt=""
+          /></a>
+        </div>
+        <img
+          class="hidden moon md:block w-7 cursor-pointer"
+          src="./img/moon.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
